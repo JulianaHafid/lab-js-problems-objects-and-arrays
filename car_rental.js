@@ -217,7 +217,7 @@ var Vendor = function(name) {
   this.totalRevenue = function () {
     return this.cars.reduce(function(oldSum, current){
       console.log(oldSum, current);
-      return prevSum + (current.quotePrice());
+      return oldSum + (current.quotePrice());
     }, 0);
 
 };
